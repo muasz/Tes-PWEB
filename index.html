@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran Bukber</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form container">
+        <h2>Pendaftaran Kegiatan Bukber</h2>
+
+        <form action="proses.php" method="post" onsubmit="return validasi()">
+
+            <label>Nama Lengkap</label>
+            <input type="text" name="nama" id="nama">
+
+            <label>Email</label>
+            <input type="email" name="email" id="email">
+
+            <label>No Hp</label>
+            <input type="tel" name="hp" id="hp">
+
+            <label>Jumlah Orang</label>
+            <input type="number" name="jumlah_orang" id="jumlah_orang" min="1" value="1">
+
+            <label>Pilihan Menu</label>
+            <select name="menu">
+                <option value="nasi goreng">Nasi Goreng</option>
+                <option value="mie goreng">Mie Goreng</option>
+                <option value="ayam bakar">Ayam Bakar</option>
+                <option value="sate">Sate</option>
+            </select>
+
+            <button type="submit">Daftar</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
